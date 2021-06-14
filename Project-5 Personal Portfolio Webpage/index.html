@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Webpage</title>
+
+    <!-- google fonts CDN -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet"/>
+
+    <!-- CSS file -->
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    
+
+    <!-- !header section -->
+    <!-- why in the below code, anchor-text is in p-tag
+    because, align-items = center is behaving as align-items = strech 
+    when height of flex-child = 100% of flex-container
+    that's why i placed the anchor-text inside p-tag
+    and positioned it to be at the center of a-tag -->
+    <header>
+        <nav id="navbar">
+            <a href="#welcome-section"><p>About</p></a>
+            <a href="#projects"><p>Work</p></a>
+            <a href="#contact"><p>Contact</p></a>
+        </nav>
+    </header>
+
+
+    <!-- !main -->
+    <main>
+
+        <!-- !about section -->
+        <section class="section section-1" id="welcome-section">
+            <h1>Hey I am Ajay</h1>
+            <p>a web developer</p>
+        </section>
+
+
+        <!-- !project section -->
+        <section class="section section-2" id="projects">
+            <h2>These are some of my projects</h2>
+            <hr>
+
+            <div class="projects-container">
+
+                <a class="project project-1 project-tile" target="_blank" href="https://codepen.io/ajayStallard/pen/NWpEjjg">
+                        <img src="https://i.ibb.co/kJfTXwY/p1.png" alt="project-1"><span><</span> Product Landing Page <span>/></span>
+                </a>
+                
+                <a class="project project-2 project-tile" target="_blank" href="https://codepen.io/ajayStallard/pen/zYZMqwy">
+                        <img src="https://i.ibb.co/3YSr0pH/p2.png" alt="project-2"><span><</span> Tribute page <span>/></span>
+                </a>
+                
+                <a class="project project-3 project-tile" target="_blank" href="https://codepen.io/ajayStallard/pen/GRWwNVE">
+                        <img src="https://i.ibb.co/c3KG8VS/p3.png" alt="project-3"><span><</span> Survey Form <span>/></span>
+                </a>
+                
+                <a class="project project-4 project-tile" target="_blank" href="https://codepen.io/ajayStallard/pen/abJQydw">
+                        <img src="https://i.ibb.co/xLPyMQq/p4.png" alt="project-4"><span><</span> JS Documentation page <span>/></span>
+                </a>
+                
+                <a class="project project-5 project-tile" target="_blank" href="https://codepen.io/ajayStallard/pen/QWdGwbq">
+                        <img src="https://i.ibb.co/3ftz2kZ/p5.png" alt="project-5"><span><</span> Coin Game <span>/></span>
+                </a>
+                
+                <a class="project project-6 project-tile" target="_blank" href="https://codepen.io/ajayStallard/pen/YzNGBqr">
+                        <img src="https://i.ibb.co/BGC0Q4d/p6.png" alt="project-6"><span><</span> Annoying Button Game <span>/></span>
+                </a>
+            </div>
+
+            <!-- show all button -->
+            <a href="https://codepen.io/ajayStallard" id="profile-link" target="_blank">Show all <span>></span></a>
+        </section>
+
+
+        <!-- !contact section -->
+        <section class="section section-3" id="contact">
+            <h2>Let's work together...</h2>
+            <p>How do you take your coffee?</p>
+
+            <nav>
+                <a href="https://www.facebook.com/profile.php?id=100069047646028" target="_blank">
+                    <i class="fab fa-facebook-square"></i> Facebook
+                </a>
+
+                <a href="https://github.com/ajayStallard" target="_blank">
+                    <i class="fab fa-github"></i> Github
+                </a>
+
+                <a href="https://twitter.com/AjayStallard" target="_blank">
+                    <i class="fab fa-twitter"></i> Twitter
+                </a>
+
+                <a href="mailto:ajay.stallard@gmail.com">
+                    <i class="fas fa-at"></i> Send a mail
+                </a>
+
+                <a href="tel:+919014259846">
+                    <i class="fas fa-mobile"></i> Call me
+                </a>
+            </nav>
+        </section>
+
+    </main>
+    
+
+    <!-- footer -->
+    <footer>
+        <p id="disclaimer">**This isn't my real portfolio page, it was created as part of freeCodeCamp RWD course</p>
+        <p id="copyright">&copy; Created for freeCodeCamp <i class="fab fa-free-code-camp"></i></p>
+    </footer>
+
+
+    <!-- font awesome CDN -->
+    <script src="https://kit.fontawesome.com/35a120d2fb.js" crossorigin="anonymous"></script>
+</body>
+</html>

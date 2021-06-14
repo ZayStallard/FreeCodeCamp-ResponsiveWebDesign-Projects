@@ -1,0 +1,137 @@
+:root {
+  --ff: "Open Sans", Arial, sans-serif;
+  --bg-color: white;
+  --code-bg: #f7f7f7;
+  --text-color: rgba(0, 0, 0, 0.75);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff);
+  font-size: 15px;
+  line-height: 23px;
+  color: var(--text-color);
+}
+
+/* !----------------------- */
+/* !----------------------- */
+/* !----------------------- */
+/* !----------------------- */
+/* main content styling */
+h1,
+h2 {
+  font-size: 30px;
+  font-weight: normal;
+  color: black;
+  line-height: 35px;
+  margin-top: 20px;
+  margin-left: -15px;
+}
+
+h1::first-letter,
+h2::first-letter {
+  text-transform: uppercase;
+}
+
+code {
+  background-color: var(--code-bg);
+  display: block;
+  /* !why? since code-tag is inline */
+
+  width: 85%;
+  margin: auto;
+  padding: 20px;
+  font-size: 13px;
+  border-radius: 10px;
+}
+
+main {
+  padding: 35px;
+  padding-bottom: 150px;
+  padding-top: 10px;
+  text-align: justify;
+}
+
+ul {
+  position: relative;
+  width: calc(100% - 70px);
+  left: 70px;
+}
+
+ul ul {
+  position: relative;
+  width: calc(100% - 60px);
+  left: 60px;
+}
+/* !----------------------- */
+/* !----------------------- */
+/* !----------------------- */
+/* !----------------------- */
+
+/* !----------------------- */
+/* !----------------------- */
+/* !----------------------- */
+/* !----------------------- */
+/* nav tag styling */
+nav h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text-color);
+  display: block;
+  margin: 10px;
+  font-size: 16px;
+  position: relative;
+  left: 20px;
+}
+
+nav li {
+  list-style: none;
+  border: 0.1px solid rgba(0, 0, 0, 0.37);
+}
+
+nav ul {
+  width: 100%;
+  position: relative;
+  left: 0;
+
+  border: 1px solid black;
+  height: 32vh;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+/* nav-tag media query */
+@media screen and (min-width: 900px) {
+  nav {
+    position: fixed;
+    top: 10px;
+    left: 0;
+    border-right: 2px solid rgba(0, 0, 0, 0.425);
+  }
+
+  nav ul {
+    height: auto;
+    width: 300px;
+  }
+
+  main {
+    position: relative;
+    left: 300px;
+    width: calc(100% - 300px);
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+/* !----------------------- */
+/* !----------------------- */
+/* !----------------------- */
+/* !----------------------- */
