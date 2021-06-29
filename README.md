@@ -1,6 +1,5 @@
 # FreeCodeCamp-ResponsiveWebDesign-Projects
-
-This repo carries five front-end projects, which are coded by me as part of Free-Code-Camp's Responsive-Web-Design course using the technologies HTML, CSS, Bootstrap, Formspree & imgBB. These projects can be viewed using the below links.
+This repo carries five front-end projects, which are coded by me as part of Free-Code-Camp's Responsive-Web-Design course. These projects can be viewed using the below links.
 
 &nbsp;
 
